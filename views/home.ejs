@@ -1,0 +1,17 @@
+
+
+<%- include("partials/header") -%>
+<div class="body">
+  <h1>Home</h1>
+  <p style = "display: block"><%=homeNote%></p>
+
+  <%newArray.forEach(function(item){%>
+    <h1> <%=item.title%> </h1>
+    <p><%=item.textArea.slice(0,150)%> ...</p>
+    <a style = "display: inline; padding: 10px 10px 10px 1px;font-size:1.5rem;" href="/post/<%=item._id%>">read more</a>
+
+
+
+  <%});%>
+
+<%- include("partials/footer") -%>

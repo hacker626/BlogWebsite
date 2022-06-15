@@ -1,0 +1,22 @@
+<%- include("partials/header")-%>
+
+<div class="body">
+  <h1>Compose Text</h1>
+  <form class="" action="/compose" method="post">
+    <br><br>
+    <p style = "font-size: 3rem;"><strong>Title</strong></p>
+
+    <input style = "width: 100%; padding:0.7rem;" type="text" name="title" required autofocus>
+    <br><br>
+    <p style = "font-size:3rem;"><strong>Post</strong></p>
+
+    <textarea style = "width: 100%" name="textArea" rows=10 cols=100% required></textarea>
+    <br><br>
+    <div class="composeButton">
+      <button class="glow-on-hover" type="submit" name="button">Publish</button>
+    </div>
+
+  </form>
+</div>
+
+<%- include("partials/footer")-%>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Daily Journal</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+  <style>
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+.container-fluid {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+.navbar {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    font-size: 12px;
+    letter-spacing: 5px;
+}
+.navbar-nav  li a:hover {
+    color: #1abc9c !important;
+}
+
+.footer-padding {
+  border-top: solid 1px;
+  background: #66bfbf;
+  width: 100%;
+  border-radius: 0.5rem;
+
+  padding-top: 10px;
+  text-align: center;
+}
+.body{
+  width: 100%;
+  margin: auto;
+  font-style: Sacramento;
+}
+.body p {
+
+  text-align: justify;
+  justify-content: center;
+}
+
+
+.footer p {
+
+	font-size: 2rem;
+  color: #fff;
+  padding-top: 0.5rem;
+}
+.composeButton{
+width: 150px;
+  margin: auto;
+}
+.composeButton button{
+  font-size: 2rem;
+  color: #F9F2ED;
+  background: #47B5FF;
+}
+
+.myButton {
+	box-shadow: 3px 4px 0px 0px #1564ad;
+	background-color:#79bbff;
+	border-radius:5px;
+	border:1px solid #337bc4;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+	font-weight:bold;
+	padding:12px 44px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #528ecc;
+}
+.myButton:hover {
+	background-color:#378de5;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+
+</style>
+  <nav class="navbar navbar-default">
+    <div class="container">
+      <div class="navbar-header">
+        <p class="navbar-brand">DAILY JOURNAL</p>
+      </div>
+        <ul class="nav navbar-nav navbar-right">
+          <!-- 6 -->
+          <li id="home"><a href="/">HOME</a></li>
+          <li id="about"><a href="/about">ABOUT US</a></li>
+          <li id="contact"><a href="/contact">CONTACT US</a></li>
+          <li id="compose"><a href="/compose">COMPOSE</a></li>
+        </ul>
+    </div>
+  </nav>
+
+  <body>
+    <div class="container">
+
+
+<div class="body">
+  <h1><%=data.title%></h1>
+
+  <p><%=data.textArea%></p>
+  <br><br><br><br>
+</div style = "align: center">
+<form class="" action="/pop" method="post">
+  <div class="composeButton">
+    <button class="myButton" type="submit" value= <%=data._id%> name="Delete">Delete</button>
+  </div>
+
+</form>
+
+
+</div>
+
+
+</div>
+
+<div class="footer-padding" style = "position:fixed;bottom:0;">
+
+  <div class="footer">
+    <p style = "font: arial; margin-bottom: 0;">Made with ❤️ by Bhaskar Emirates</p>
+    <p style = "font-size: 1rem;">© All Rights Reserved 2022-23</p>
+  </div>
+</div>
+<br><br><br><br><br><br><br>
+</body>
+</html>
